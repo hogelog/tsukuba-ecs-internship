@@ -6,6 +6,7 @@
 ## 目次
 - [00. 事前準備](00-setup)
 - [01. Docker](01-docker)
-- [02. Terraform](02-terraform)
-- [03. ECS](03-ecs)
-- [04. Hako](04-hako)
+- [02. AWS](02-aws)
+- [03. Terraform](03-terraform)
+- [04. ECS](04-ecs)
+- [05. Hako](05-hako)
