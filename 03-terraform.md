@@ -7,15 +7,6 @@ Infrastructure as Code を実現するためのツールで、HCL という設�
 
 Terraform は多様なプラグインにより様々なインフラに対応したツールであり、たとえば AWS のリソースを管理したい場合には terraform-provider-aws <https://github.com/terraform-providers/terraform-provider-aws> を利用します。
 
-## AWS 環境の作成
-- AWS アカウント
-- Backend
-- VPC
-- IAM User
-- ECR
-- ECS Cluster
-- ALB
-
 ## TBD
 
 ## 参考リンク
