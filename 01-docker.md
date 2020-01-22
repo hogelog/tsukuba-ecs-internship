@@ -35,6 +35,18 @@ $ docker run -it -p 4567:4567 sample-app
 
 http://localhost:4567/ を開いてみると "Hello world!" とだけ書かれた画面が表示されていれば正常です。
 
+## docker-compose
+docker-compose は複数のコンテナからなる Docker アプリケーションを定義・実行するツールです。
+アプリケーションに必要なポート、ボリュームなどを指定できるので単体コンテナからなるアプリケーション開発時にもしばしば用いられます。
+
+sample-sinatra-app のディレクトリで以下のコマンドを実行し、自分で `docker run ...` コマンドを実行した時と同様のアプリケーションが実行されていることを確認してみてください。
+
+```console
+$ docker-compose up
+```
+
+`docker-compose up` で作成・起動したアプリケーションは `docker-compose down` で停止・削除されます。
+
 ## アプリケーションを変更してみる
 sample-sinatra-app というアプリケーションを編集して再度ビルドし、自分の変更がイメージに反映されていることを確認してみましょう。
 
@@ -47,18 +59,6 @@ sample-sinatra-app というアプリケーションを編集して再度ビル�
   - アプリケーションで利用するライブラリを指定しているファイルです
 - app.rb
   - アプリケーションのロジックを記述しているファイルです
-
-## docker-compose
-docker-compose は複数のコンテナからなる Docker アプリケーションを定義・実行するツールです。
-アプリケーションに必要なポート、ボリュームなどを指定できるので単体コンテナからなるアプリケーション開発時にもしばしば用いられます。
-
-sample-sinatra-app のディレクトリで以下のコマンドを実行し、自分で `docker run ...` コマンドを実行した時と同様のアプリケーションが実行されていることを確認してみてください。
-
-```console
-$ docker-compose up
-```
-
-`docker-compose up` で作成・起動したアプリケーションは `docker-compose down` で停止・削除されます。
 
 ## 参考リンク
 - https://docs.docker.com/engine/reference/commandline/build/
