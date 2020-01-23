@@ -1,7 +1,7 @@
 # AWS
 
 ## マネジメントコンソールへのアクセス
-https://342842859783.signin.aws.amazon.com/console/ にアクセスし、ログインしてください。
+<https://342842859783.signin.aws.amazon.com/console/> にアクセスし、ログインしてください。
 
 ## 認証情報の設定
 (以下 IAM ユーザ名を tsukuba-komuro として進めていくので適宜読み替えてください)
@@ -75,4 +75,4 @@ README.md  hako  terraform
 ```
 
 ## 参考リンク
-- https://docs.aws.amazon.com/ja_jp/codecommit/latest/userguide/setting-up-gc.html
+- <https://docs.aws.amazon.com/ja_jp/codecommit/latest/userguide/setting-up-gc.html>

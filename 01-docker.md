@@ -1,5 +1,5 @@
 # Docker
-クックパッドは https://cookpad.com 以外にも様々なサービスを運用しており、それらのサービス一つ一つの中でたくさんのアプリケーションが動いています。
+クックパッドは <https://cookpad.com> 以外にも様々なサービスを運用しており、それらのサービス一つ一つの中でたくさんのアプリケーションが動いています。
 それらのアプリケーションのほとんどは Docker が利用されており、クックパッドの Docker 実行基盤の上では 1000 種類程のアプリケーションが動いています。
 
 ここではアプリケーション開発に必要な Docker の基本の部分に触れてみます。
@@ -33,7 +33,7 @@ $ docker run -it -p 4567:4567 sample-app
 > [2020-01-20 08:22:40] INFO  WEBrick::HTTPServer#start: pid=1 port=4567
 > ```
 
-http://localhost:4567/ を開いてみると "Hello world!" とだけ書かれた画面が表示されていれば正常です。
+<http://localhost:4567/> を開いて "Hello world!" とだけ書かれた画面が表示されていれば正常です。
 
 ## docker-compose
 docker-compose は複数のコンテナからなる Docker アプリケーションを定義・実行するツールです。
@@ -61,8 +61,7 @@ sample-sinatra-app というアプリケーションを編集して再度ビル�
   - アプリケーションのロジックを記述しているファイルです
 
 ## 参考リンク
-- https://docs.docker.com/engine/reference/commandline/build/
-- https://docs.docker.com/engine/reference/run/
-- https://docs.docker.com/compose/
-- http://sinatrarb.com/
-
+- <https://docs.docker.com/engine/reference/commandline/build/>
+- <https://docs.docker.com/engine/reference/run/>
+- <https://docs.docker.com/compose/>
+- <http://sinatrarb.com/>

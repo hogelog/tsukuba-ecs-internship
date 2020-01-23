@@ -12,7 +12,7 @@ $ gem install hako
 ```
 
 ### hako-nginx
-https://github.com/eagletmt/hako-nginx
+<https://github.com/eagletmt/hako-nginx>
 
 ```console
 $ git clone https://github.com/eagletmt/hako-nginx.git
