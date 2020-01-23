@@ -4,7 +4,9 @@
 https://342842859783.signin.aws.amazon.com/console/ にアクセスし、ログインしてください。
 
 ## 認証情報の設定
-<https://console.aws.amazon.com/iam/home?#/users/mana-shikimiya?section=security_credentials> にアクセスします。ここで AWS の API を叩くための認証情報を発行します。
+(以下 IAM ユーザ名を tsukuba-komuro として進めていくので適宜読み替えてください)
+
+<https://console.aws.amazon.com/iam/home?#/users/tsukuba-komuro?section=security_credentials> にアクセスします。ここで AWS の API を叩くための認証情報を発行します。
 
 ![](images/security_credentials.png)
 
@@ -45,8 +47,6 @@ root@7e46d67b61a8:~# aws codecommit get-repository --repository-name tsukuba-ecs
 このリポジトリは AWS の CodeCommit というフルマネージドソースコード管理サービスにホストしています。
 
 ### CodeCommit のセットアップ
-(IAM ユーザ名を tsukuba-komuro として進めていくので適宜読み替えてください)
-
 <https://console.aws.amazon.com/iam/home?region=ap-northeast-1#/users/tsukuba-komuro?section=security_credentials>
 
 “Upload SSH public key” を押下し、自分の公開鍵 ($HOME/.ssh/id_rsa.pub) をコピーして貼り付けて進みます。
@@ -64,7 +64,7 @@ Connection to git-codecommit.ap-northeast-1.amazonaws.com closed.
 ```
 
 ### CodeCommit からのクローン
-<https://ap-northeast-1.console.aws.amazon.com/codesuite/codecommit/repositories/tsukuba-ecs-internship-infra/browse?region=ap-northeast-1> にアクセスし、コードをクローンしてきてください。
+<https://ap-northeast-1.console.aws.amazon.com/codesuite/codecommit/repositories/tsukuba-ecs-internship-infra/browse?region=ap-northeast-1> にアクセスし、「SSH のクローン」からコードをクローンしてきてください。
 
 クローンしてくる場所は tsukuba-playground リポジトリの home/ ディレクトリ以下にしてください。 tsukuba-playground/home/ 以下は tsukuba-playground の Docker コンテナ内部とも共有しています。 tsukuba-playground のシェル内でも tsukuba-ecs-internship-infra が存在することを確認してください。
 

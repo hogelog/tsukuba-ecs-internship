@@ -5,6 +5,8 @@
 ECS を使ったデプロイをある程度定型化し、コマンドから簡単にデプロイできるようにした Hako <https://github.com/eagletmt/hako> というツールを用いてデプロイしてみます。
 
 ## hako deploy
+tsukuba-playground のシェル内で以下のコマンドを実行してみましょう。
+
 ```console
 $ gem install hako
 ```
