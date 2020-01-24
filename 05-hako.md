@@ -57,6 +57,7 @@ Dockerfile, run-nginx.rb を見てもらえればわかりますが、S3 から�
 - 好きなアプリケーションを Docker 化して Hako アプリケーションとしてデプロイしてみる
 - Fargate ではない ECS クラスタを作成してみる
 - ECS を完全理解する
+- ご家庭 AWS に ECS/Hako 環境を構築してみる
 
 ## 参考リンク
 - <https://github.com/eagletmt/hako>
