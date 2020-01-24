@@ -54,11 +54,16 @@ $ docker push 342842859783.dkr.ecr.ap-northeast-1.amazonaws.com/sample-app-komur
 
 - クラスター VPC: cookpad-internship
 - サブネット: c-public, d-public
-- セキュリティグループ: http
+- セキュリティグループ: http-open
 - パブリック IP の自動割り当て: ENABLED
 - ロードバランサの種類: なし
 
 サービスが無事起動していれば起動したタスクのパブリック IP アドレスからアプリケーションにアクセスできるようになっているはずです。
+
+## ALB への登録
+ECS サービスに直接接続することはできました。ロードバランサの裏に ECS サービスを配置し、柔軟にスケールできる構成にしてみましょう。
+
+Fargate タイプの ECS サービスを登録するには「ターゲットの種類」は「IP」を選んでください。
 
 ## 参考リンク
 - Amazon Elastic Container Service ドキュメント <https://docs.aws.amazon.com/ja_jp/ecs/>
